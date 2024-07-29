@@ -1,0 +1,42 @@
+/* Flexbox Container */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#experiment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Layout */
+@media (max-width: 800px) {
+    #experiment-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    #experiment-container {
+        padding: 10px;
+    }
+}
